@@ -1,0 +1,31 @@
+<div class="container p-4">
+    <div class="container text-center my-auto">
+        <h1 class="mb-5">
+            <em style="color:#FFFFFF">Alertas del Partido {{descrip}}</em>
+        </h1>
+    </div>
+<table class="table table-striped " style="background-color:#FFFFFF">
+  <thead class="thead-dark" style="background-color:#292b2c; color:#FFFFFF" >
+    <tr>
+      <th scope="col">Jugador</th>
+      <th scope="col">PPM</th>
+      <th scope="col">P.Sistólica</th>
+      <th scope="col">P.Diastólica</th>
+      <th scope="col">Oxigenación</th>
+      <th scope="col">Hora</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+        <tr>
+            <td>{{Nombre}}</td>
+            <td>{{PPM}}</td>
+            <td>{{Presion_Sistolica}}</td>
+            <td>{{Presion_Diastolica}}</td>
+            <td>{{Oxigenacion}}</td>
+            <td>{{Hora_Medicion}}</td>
+        </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

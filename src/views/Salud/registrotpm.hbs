@@ -1,0 +1,25 @@
+<div class="container p-4">
+    <div class="container text-center my-auto">
+        <h1 class="mb-5">
+            <em style="color:#FFFFFF">Registro Altura-Peso {{fullname}}</em>
+        </h1>
+    </div>
+<table class="table table-striped " style="background-color:#FFFFFF">
+  <thead class="thead-dark" style="background-color:#292b2c; color:#FFFFFF" >
+    <tr>
+      <th scope="col">Altura</th>
+      <th scope="col">Peso</th>
+      <th scope="col">Edad</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+        <tr>
+            <td>{{Altura}}(cm)</td>
+            <td>{{Peso}}(kg)</td>
+            <td>{{edad}}</td>
+        </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

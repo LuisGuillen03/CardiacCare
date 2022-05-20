@@ -1,0 +1,23 @@
+<div class="container p-4">
+    <div class="container text-center my-auto">
+        <h1 class="mb-5">
+            <em style="color:#FFFFFF">Antecedentes de {{name}}</em>
+        </h1>
+    </div>
+<table class="table table-striped " style="background-color:#FFFFFF">
+  <thead class="thead-dark" style="background-color:#292b2c; color:#FFFFFF" >
+    <tr>
+      <th scope="col">Tipo</th>
+      <th scope="col">Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+        <tr>
+            <td>{{TIPO}}</td>
+            <td>{{Descripcion}}</td>
+        </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

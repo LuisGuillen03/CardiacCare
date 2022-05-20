@@ -1,0 +1,43 @@
+<div class="container p-4">
+    <div class="container text-center my-auto">
+        <h1 class="mb-5">
+            <em style="color:#FFFFFF">Mediciones General de {{name}} en el partido {{descrip}} Jugado en {{ubi}}</em>
+        </h1>
+    </div>
+<table class="table table-striped " style="background-color:#FFFFFF">
+  <thead class="thead-dark" style="background-color:#292b2c; color:#FFFFFF" >
+    <tr>
+      <th scope="col">Altura</th>
+      <th scope="col">P. Atmosférica</th>
+      <th scope="col">C. Aire</th>
+      <th scope="col">Humedad</th>
+      <th scope="col">Precipitacion</th>
+      <th scope="col">T. Ambiental</th>
+      <th scope="col">PPM</th>
+      <th scope="col">P. Diastólica</th>
+      <th scope="col">P. Sistólica</th>
+      <th scope="col">Oxigenación</th>
+      <th scope="col">T. Jugador</th>
+      <th scope="col">Alerta</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+        <tr>
+            <td>{{Altura}}</td>
+            <td>{{PresionAtmosferica}}</td>
+            <td>{{CalidadDelAire}}</td>
+            <td>{{Humedad}}</td>
+            <td>{{Precipitacion}}</td>
+            <td>{{TemperaturaDelPartido}}</td>
+            <td>{{PPM}}</td>
+            <td>{{Presion_Diastolica}}</td>
+            <td>{{Presion_Sistolica}}</td>
+            <td>{{Oxigenacion}}</td>
+            <td>{{TemperaturaJugador}}</td>
+            <td>{{Alerta}}</td>
+        </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

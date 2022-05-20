@@ -1,0 +1,38 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3>Registro</h3>
+        </div>
+        <div class="card-body">
+            <img src="/img/logo2.PNG" alt="Logo Fazt" class="card-img-top mx-auto m-2">
+          <form action="/register" method="POST">
+            <div class="form-group">
+              <input type="type" name="fullname" maxlength="60" required minlength="1" placeholder="Full Name" class="form-control" autofocus>
+            </div><br>
+            <div class="form-group">
+              <input type="text" maxlength="20" minlength="5" required name="username" placeholder="Username" class="form-control">
+            </div><br>
+            <div class="form-group">
+              <input type="password" name="password" maxlength="80" minlength="8" required placeholder="Password" class="form-control">
+            </div><br>  
+            <div class="form-group">
+              <select required id="rol" name="rol" class="form-select" aria-label="Default select example" >
+                <option selected value="">Rol</option>
+                <option value=1>Jugador</option>
+                <option value=2>Médico</option>
+                <option value=3>Admin</option>
+              </select>
+            </div><br>            
+            <div class="form-group">
+              <button class="btn btn-block cardiac-btn">
+                Registrar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

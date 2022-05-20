@@ -1,0 +1,27 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3>Busqueda Mediciones Generales</h3>
+        </div>
+        <div class="card-body">
+          <form action="/mediciones_generales" method="POST">    
+            <div class="form-group">
+              <input type="type" name="fullname" maxlength="150" required minlength="1" placeholder="Nombre del Jugador" class="form-control" autofocus>
+            </div><br>  
+            <div class="form-group">
+            <label >Fecha del Partido</label>
+            <input type="date" name="fecha" min="2018-01-01" max="2023-12-31" required/>
+            </div><br>
+            <div class="form-group">
+              <button class="btn btn-block cardiac-btn">
+                Buscar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</div> 
+

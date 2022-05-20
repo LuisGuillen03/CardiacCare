@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/img/logo2.png" style="display: inline-block; height: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        {{#if user}}
+        <ul class="navbar-nav me-auto">
+          {{#if powers.salud}}
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color:#FFFFFF">
+          Salud
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/antecedentes">Antecedentes</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/alertas_partido">Alertas X Partido</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/mediciones_generales">Mediciones X Partido</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/registro_ap">Registro Altura-Peso</a>                                                                                 
+          </div>
+        </li> 
+        {{/if}}
+        {{#if powers.rendimiento}}
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color:#FFFFFF">
+          Rendimiento
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/km_partido">KM X Partido</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/mediciones_partido">Mediciones X Partido</a> 
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="registro_tpj">Registro Altura-Peso</a>                                                                           
+          </div>
+        </li> 
+        {{/if}}
+          </ul>
+          <ul class="navbar-nav ms-auto">
+          {{#if powers.register}}
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="color:#FFFFFF">
+          Registro
+          </a>
+          <div class="ms-auto">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/register">Nuevo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/users">Todos los Usuarios</a>                                                                            
+          </div>
+        </li> 
+        {{/if}}
+        <li class="nav-item">
+          <a class="nav-link" href="/profile" style="color:#FFFFFF">{{user.Username}}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout" style="color:#FFFFFF">Cerrar Sesión</a>
+        </li>
+        {{else}}
+        <div class="ms-auto">
+          <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a class="nav-link" href="/login" style="color:#FFFFFF">Iniciar Sesión</a>
+        </li>
+        </ul>
+        </div>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>
+

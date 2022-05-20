@@ -1,0 +1,25 @@
+<div class="container p-4">
+    <div class="container text-center my-auto">
+        <h1 class="mb-5">
+            <em style="color:#FFFFFF">Usuarios</em>
+        </h1>
+    </div>
+<table class="table table-striped " style="background-color:#FFFFFF">
+  <thead class="thead-dark" style="background-color:#292b2c; color:#FFFFFF" >
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Username</th>
+      <th scope="col">Rol</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+        <tr>
+            <td>{{Nombre}}</td>
+            <td>{{Username}}</td>
+            <td>{{Rol}}</td>
+        </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>

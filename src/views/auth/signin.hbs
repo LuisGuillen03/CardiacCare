@@ -1,0 +1,30 @@
+<div class="container p-4">
+  <div class="row">
+    <div class="col-md-4 mx-auto">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3>Iniciar Sesión</h3>
+        </div>
+        <div class="card-body">
+            <img src="/img/logo2.PNG" alt="Logo Fazt" class="card-img-top mx-auto m-2">
+          <form action="/login" method="POST">
+            <div class="form-group">
+              <input type="text" maxlength="20" minlength="5" required name="username" placeholder="Username" class="form-control" autofocus>
+            </div><br>
+            <div class="form-group">
+              <input type="password" name="password" placeholder="Password"  required maxlength="80" minlength="8" class="form-control">
+            </div><br>           
+            <div class="text-xs-center">
+                <div class="g-recaptcha" data-sitekey="6LfgdvcfAAAAABBSqkungk9DscOGFRhJhK3lePQ2"></div>
+            </div><br>
+            <div class="form-group">
+              <button class="btn btn btn-block cardiac-btn" >
+                Iniciar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

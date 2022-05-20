@@ -1,0 +1,63 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montagu Slab', sans-serif;
+    background: url('/img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.index {
+    width: 100vw;
+    height: 100vh;
+}
+
+.masthead {
+    color: black;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    background: url('/img/background.jpg');
+    background-position: center center ;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+.masthead h1{
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-with:992px){
+    .masthead h1{
+        font-size: 5.5rem;
+    }
+}
+
+.cardiac-btn{
+    background-color: #e91b1b;
+    border-color:#730000;
+    color: #ffffff;
+}
+
+input{
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+.text-xs-center {
+    text-align: center;
+ }
+
+.g-recaptcha {
+    display: inline-block;
+    transform:scale(0.77);
+    -webkit-transform:scale(0.77);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+}
